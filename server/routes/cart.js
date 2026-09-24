@@ -1,0 +1,1 @@
+import {Router} from 'express';import {getCart,addToCart,updateCart,removeFromCart} from '../controllers/cartController.js';import {protect} from '../middleware/auth.js';const r=Router();r.use(protect);r.get('/',getCart);r.post('/',addToCart);r.put('/:itemId',updateCart);r.delete('/:itemId',removeFromCart);export default r;

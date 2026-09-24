@@ -1,0 +1,1 @@
+export function Loader(){return <div className="loader"><span></span><span></span><span></span></div>}export function Skeletons(){return <div className="grid">{Array.from({length:8}).map((_,i)=><div className="skeleton" key={i}/>)}</div>}

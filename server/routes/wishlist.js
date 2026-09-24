@@ -1,0 +1,1 @@
+import {Router} from 'express';import {getWishlist,toggleWishlist} from '../controllers/wishlistController.js';import {protect} from '../middleware/auth.js';const r=Router();r.use(protect);r.get('/',getWishlist);r.post('/toggle',toggleWishlist);export default r;
